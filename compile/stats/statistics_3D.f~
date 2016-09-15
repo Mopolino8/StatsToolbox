@@ -1,0 +1,23 @@
+!-----------------------------------------------------------------------
+!!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!     Driver for statistics computation
+      subroutine stat_avg_3D
+
+      implicit none
+
+      include 'SIZE_DEF'
+      include 'SIZE'
+      include 'TSTEP_DEF'
+      include 'TSTEP'
+      include 'INPUT_DEF'
+      include 'INPUT'
+      include 'STATS'
+
+
+      write(*,*) 'Hi!'
+      
+      return
+      end subroutine stat_avg_3D
+
+!======================================================================
+      

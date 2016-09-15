@@ -1,0 +1,2434 @@
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/drive.f -o obj/drive.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/drive1.f -o obj/drive1.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/drive2.f -o obj/drive2.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/plan4.f -o obj/plan4.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/bdry.f -o obj/bdry.o
+/scratch/rvinuesa/nek1093/trunk/nek/plan4.f:409.25:
+
+      call add3s2(vext(1,2),vy,vylag,ab0,ab1,ntot)                      
+                         1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 2
+/scratch/rvinuesa/nek1093/trunk/nek/plan4.f:410.34:
+
+      if(if3d) call add3s2(vext(1,3),vz,vzlag,ab0,ab1,ntot)             
+                                  1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 2
+/scratch/rvinuesa/nek1093/trunk/nek/plan4.f:414.27:
+
+        call add2s2(vext(1,2),vylag(1,1,1,1,2),ab2,ntot)                
+                           1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 2
+/scratch/rvinuesa/nek1093/trunk/nek/plan4.f:415.36:
+
+        if(if3d) call add2s2(vext(1,3),vzlag(1,1,1,1,2),ab2,ntot)       
+                                    1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 2
+/scratch/rvinuesa/nek1093/trunk/nek/plan4.f:20.20:
+
+      COMMON /SCRNS/ RES1  (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1392640 vs 1327104 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/coef.f -o obj/coef.o
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1231.37:
+
+            cv   = vtrans(ix,iy,iz,e,icv)/rho                           
+                                     1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1239.38:
+
+            lambda = vdiff(ix,iy,iz,e,ilam)                             
+                                      1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1400.20:
+
+      COMMON /CTMP1/ A1X(LX1),A1Y(LX1),STX(LX1),STY(LX1)                
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (192 vs 1440 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1467.20:
+
+      COMMON /CTMP0/ XFM1(LX1),YFM1(LX1),T1XF(LX1),T1YF(LX1)            
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (192 vs 864 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1465.20:
+
+      COMMON /CTMP1/ A1X(LX1),A1Y(LX1),A2X(LX1),A2Y(LX1)                
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (336 vs 1440 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/drive2.f:1745.36:
+
+         call plan4_vol(vxc,vyc,vzc,prc)                                
+                                    1
+Warning: Actual argument contains too few elements for dummy argument 'prc' (8192/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1897.20:
+
+      COMMON /SCRMG/ V1(LX1,LY1,LZ1,LELV)                               
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (884736 vs 1728 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:609.20:
+
+      COMMON /SCRMG/ TMQ1(LX1,LY1,LZ1,LELV)                             
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:606.20:
+
+      COMMON /SCRUZ/ TMP1(LX1,LY1,LZ1,LELV)                             
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 1728 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1256.20:
+
+      COMMON /CTMP0/ STC(LX1,LY1,LZ1)                                   
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1728 vs 864 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/drive2.f:1917.20:
+
+      common /scrns/ resv1 (lx1,ly1,lz1,lelv)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (884736 vs 1392640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:1253.20:
+
+      COMMON /SCRSF/ TRX(LX1,LY1,LZ1)                                   
+                    1
+Warning: Named COMMON block 'scrsf' at (1) shall be of the same size as elsewhere (5184 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/bdry.f:2039.20:
+
+      common /scrmg/ v1(lx1,ly1,lz1,lelt)                               
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/drive2.f:1555.20:
+
+      COMMON /SCRNS/ WORK(LCTMP1)                                       
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (884736 vs 1392640 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/conduct.f -o obj/conduct.o
+/scratch/rvinuesa/nek1093/trunk/nek/drive2.f:1777.20:
+
+      COMMON /SCRNS/ RESV1 (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (729088 vs 1392640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/drive2.f:1968.20:
+
+      COMMON /SCRNS/ w(LX1,LY1,LZ1,LELT)                                
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (221184 vs 1392640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/drive2.f:2015.20:
+
+      COMMON /SCRUZ/ TA(LX1,LY1,LZ1,LELT)                               
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (221184 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/conduct.f:267.20:
+
+      common /scrns/ ta(lt),tb(lt),h2(lt)                               
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (663552 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1649.22:
+
+      call out_fld_el(x,e,'XQ')                                         
+                      1
+Warning: Actual argument contains too few elements for dummy argument 'x' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1650.22:
+
+      call out_fld_el(y,e,'YQ')                                         
+                      1
+Warning: Actual argument contains too few elements for dummy argument 'x' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1651.22:
+
+      call out_fld_el(z,e,'ZQ')                                         
+                      1
+Warning: Actual argument contains too few elements for dummy argument 'x' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/conduct.f:392.20:
+
+      common /scrns/ ta(lx1,ly1,lz1,lelt)                               
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (442368 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/conduct.f:454.20:
+
+      common /scruz/ ta(lx1,ly1,lz1,lelt)                               
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (442368 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1209.20:
+
+      COMMON /CTMP0/ C  (LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (442368 vs 1920 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1205.20:
+
+      COMMON /CTMP1/ ZSM1(LX1,LY1,LZ1,LELT)                             
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (884736 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1079.20:
+
+      COMMON /CTMP0/ WGTR1(LX1,LELT)                                    
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (24576 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1075.20:
+
+      COMMON /SCRNS/ XRM1(LX1,LY1,LZ1,LELT)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (884736 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1142.20:
+
+      COMMON /SCRNS/ XRM1(LX1,LY1,LZ1,LELT)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (884736 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:603.20:
+
+      COMMON /CTMP1/ ZSM1(LX1,LY1,LZ1,LELT)                             
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (442368 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1462.20:
+
+      COMMON /CTMP0/ XA(LX1,LY3,LZ3), XB(LX1,LY1,LZ3)                   
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (3456 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1395.20:
+
+      COMMON /CTMP0/ XB(LX1,LY1,LZ1)                                    
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1728 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1505.20:
+
+      COMMON /CTMP0/ XA(LX3,LY1,LZ1),  XB(LX3,LY3,LZ1)                  
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (3456 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1580.20:
+
+      COMMON /CTMP0/ XA(LX1,LY2,LZ2), XB(LX1,LY1,LZ2)                   
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1920 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/coef.f:1621.20:
+
+      COMMON /CTMP0/ XA(LX1,LY2,LZ2), XB(LX1,LY1,LZ2)                   
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1920 vs 442368 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/connect1.f -o obj/connect1.o
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1725.17:
+
+      call xfill(x,c,n)                                                 
+                 1
+Warning: Type mismatch in argument 'x' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1734.17:
+
+      call xfill(x,c,n)                                                 
+                 1
+Warning: Type mismatch in argument 'x' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1743.17:
+
+      call xfill(x,c,n)                                                 
+                 1
+Warning: Type mismatch in argument 'x' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1752.17:
+
+      call xfill(x,c,n)                                                 
+                 1
+Warning: Type mismatch in argument 'x' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1762.17:
+
+      call xfill(x,c,n)                                                 
+                 1
+Warning: Type mismatch in argument 'x' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1686.31:
+
+      call gs_new_tstr(glo_num,x,c,gsh_std)                             
+                               1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:313.20:
+
+      COMMON /CTMP0/ ITMP(3,3,3)                                        
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (108 vs 368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/connect1.f:1805.20:
+
+      common /scruz/  snx(lxz) , sny(lxz) , snz(lxz) ,  efc(lxz)        
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (1152 vs 663552 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/connect2.f -o obj/connect2.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/dssum.f -o obj/dssum.o
+/scratch/rvinuesa/nek1093/trunk/nek/connect2.f:163.36:
+
+                  call cscan(string,'MESH DATA',9)                      
+                                    1
+Warning: Character length of actual argument shorter than of dummy argument 'key' (9/132) at (1)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/edgec.f -o obj/edgec.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/eigsolv.f -o obj/eigsolv.o
+/scratch/rvinuesa/nek1093/trunk/nek/connect2.f:1653.20:
+
+      common /scrns/ tc(lx1,ly1,lz1,lelt),td(lx1,ly1,lz1,lelt)          
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1105920 vs 663568 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/connect2.f:1883.20:
+
+      COMMON /CTMP0/ VO(LELT),XYZI(3,LELT),CG(3,LELT)                   
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (7264 vs 456 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/connect2.f:2056.20:
+
+      COMMON /CTMP0/ XCG(LELT),YCG(LELT),ZCG(LELT)                      
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (3072 vs 7264 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/eigsolv.f:371.20:
+
+      COMMON /SCREV/ X2 (LX2,LY2,LZ2,LELV)                              
+                    1
+Warning: Named COMMON block 'screv' at (1) shall be of the same size as elsewhere (131072 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/eigsolv.f:326.20:
+
+      COMMON /SCREV/ X2   (LX2,LY2,LZ2,LELV)                            
+                    1
+Warning: Named COMMON block 'screv' at (1) shall be of the same size as elsewhere (131072 vs 442368 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/gauss.f -o obj/gauss.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/genxyz.f -o obj/genxyz.o
+/scratch/rvinuesa/nek1093/trunk/nek/genxyz.f:697.20:
+
+      COMMON /CTMP0/ XCV(3,2,2),VN1(3),VN2(3)                           
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (240 vs 3456 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/genxyz.f:1298.20:
+
+      common /ctmp0/ xcb(2,2,2),ycb(2,2,2),zcb(2,2,2),w(ldw)            
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (7104 vs 3456 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/genxyz.f:1349.20:
+
+      common /ctmp0/ w(ldw,2),zg(3)                                     
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (13848 vs 7104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/genxyz.f:1359.20:
+
+      common /cxyzl/ zgml(lx1,3),jx (lx1*3),jy (lx1*3),jz (lx1*3)       
+                    1
+Warning: Named COMMON block 'cxyzl' at (1) shall be of the same size as elsewhere (1032 vs 736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/genxyz.f:329.21:
+
+      COMMON /SRFCEL/ SUCCES                                            
+                     1
+Warning: Named COMMON block 'srfcel' at (1) shall be of the same size as elsewhere (8 vs 4 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier1.f -o obj/navier1.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/makeq.f -o obj/makeq.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier0.f -o obj/navier0.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier0.f:105.20:
+
+      common /scruz/ xbar(ldim,lelt),ibar(lelt)                         
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (3584 vs 196608 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier2.f -o obj/navier2.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier2.f:190.20:
+
+      common /ctmp1/ ur(lxyz),us(lxyz),ut(lxyz)                         
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (5184 vs 3456 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3256.56:
+
+            call specmp(md(1,1,1,ie),nd,m1(1,1,1,ie),n1,im1d,im1dt,w)   
+                                                        1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-2)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3260.56:
+
+            call specmp(m1(1,1,1,ie),n1,md(1,1,1,ie),nd,imd1,imd1t,w)   
+                                                        1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-2)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3287.52:
+
+        call specmp(m1(1,1,1,ie),n1,md(1,1,1,ie),nd,pmd1,pmd1t,w)       
+                                                    1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-2)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3555.26:
+
+      call mapwp(dfid,nxd,dfi,nx1,-1)                                   
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'm1' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4372.17:
+
+      call cdtp (outx,inpfld,rxm2,sxm2,txm2,1)                          
+                 1
+Warning: Actual argument contains too few elements for dummy argument 'dtx' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4373.17:
+
+      call cdtp (outy,inpfld,rym2,sym2,tym2,2)                          
+                 1
+Warning: Actual argument contains too few elements for dummy argument 'dtx' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4375.20:
+
+     $   call cdtp (outz,inpfld,rzm2,szm2,tzm2,3)                       
+                    1
+Warning: Actual argument contains too few elements for dummy argument 'dtx' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2723.27:
+
+         call rotate_cyc  (a,b,c,1)                                     
+                           1
+Warning: Actual argument contains too few elements for dummy argument 'r1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2725.27:
+
+         call rotate_cyc  (a,b,c,0)                                     
+                           1
+Warning: Actual argument contains too few elements for dummy argument 'r1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4346.23:
+
+      call multd (work,inpx,rxm2,sxm2,txm2,1,iflg)                      
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'x' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4348.23:
+
+      call multd (work,inpy,rym2,sym2,tym2,2,iflg)                      
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'x' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4351.26:
+
+         call multd (work,inpz,rzm2,szm2,tzm2,3,iflg)                   
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'x' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:326.22:
+
+         call wgradm1(out1,out2,out3,inp,nelv) ! weak grad on FLUID mesh
+                      1
+Warning: Actual argument contains too few elements for dummy argument 'ux' (64/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:331.18:
+
+      CALL MULTD (OUT1,INP,RXM2,SXM2,TXM2,1,iflg)                       
+                  1
+Warning: Actual argument contains too few elements for dummy argument 'dx' (64/8192) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:332.18:
+
+      CALL MULTD (OUT2,INP,RYM2,SYM2,TYM2,2,iflg)                       
+                  1
+Warning: Actual argument contains too few elements for dummy argument 'dx' (64/8192) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:334.18:
+
+     $CALL MULTD (OUT3,INP,RZM2,SZM2,TZM2,3,iflg)                       
+                  1
+Warning: Actual argument contains too few elements for dummy argument 'dx' (64/8192) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1891.33:
+
+         CALL BDSYS (BDMAT,BDRHS,DTBD,NBD,NDIM)                         
+                                 1
+Warning: Actual argument contains too few elements for dummy argument 'dt' (1/9) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1995.27:
+
+      CALL VELCHAR (VX,VXN,VXLAG,NBD,TAU,DTLAG)                         
+                           1
+Warning: Actual argument contains too few elements for dummy argument 'vlag' (55296/248832) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1996.27:
+
+      CALL VELCHAR (VY,VYN,VYLAG,NBD,TAU,DTLAG)                         
+                           1
+Warning: Actual argument contains too few elements for dummy argument 'vlag' (55296/248832) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1998.27:
+
+     $CALL VELCHAR (VZ,VZN,VZLAG,NBD,TAU,DTLAG)                         
+                           1
+Warning: Actual argument contains too few elements for dummy argument 'vlag' (55296/248832) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2749.30:
+
+            call rotate_cyc  (a,b,c,1)                                  
+                              1
+Warning: Actual argument contains too few elements for dummy argument 'r1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2751.30:
+
+            call rotate_cyc  (a,b,c,0)                                  
+                              1
+Warning: Actual argument contains too few elements for dummy argument 'r1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3823.23:
+
+      call velchar (vx,vxn,vxlag,nbd,tau,dtlag)                         
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'vn' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3824.23:
+
+      call velchar (vy,vyn,vylag,nbd,tau,dtlag)                         
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'vn' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3826.23:
+
+     $call velchar (vz,vzn,vzlag,nbd,tau,dtlag)                         
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'vn' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3900.22:
+
+      call conv1rk   (du,dv,dw,u,v,w)                                   
+                      1
+Warning: Actual argument contains too few elements for dummy argument 'du' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4092.22:
+
+      call conv1rk2  (du,dv,dw,u,v,w,cu,cv,cw,beta,wk)                  
+                      1
+Warning: Actual argument contains too few elements for dummy argument 'du' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4224.20:
+
+      CALL VELINIT (VEL1,VEL2,VEL3,ILAG)                                
+                    1
+Warning: Actual argument contains too few elements for dummy argument 'vel1' (216/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3953.20:
+
+      common /ctmp0/ duds(lx1,ly1,lz1)                                  
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (5184 vs 65536 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3729.20:
+
+      common /ctmp0/ duds(lx1,ly1,lz1)                                  
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (5184 vs 65536 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier3.f -o obj/navier3.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3444.20:
+
+      COMMON /CTMP1/  MFI    (LX1,LY1,LZ1,LELV)                         
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (663552 vs 221184 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier4.f -o obj/navier4.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:575.20:
+
+      common /ctmp1/ ta1 (lx1*ly1*lz1)                                  
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (5184 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4448.20:
+
+      common /ctmp1/ ur(lxyz),us(lxyz),ut(lxyz)                         
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (5184 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:983.20:
+
+      COMMON /SCRCH/ H1M2 (LX2,LY2,LZ2,LELV)                            
+                    1
+Warning: Named COMMON block 'scrch' at (1) shall be of the same size as elsewhere (131072 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1060.21:
+
+      COMMON /CPRINT/ IFPRINT, IFHZPC                                   
+                     1
+Warning: Named COMMON block 'cprint' at (1) shall be of the same size as elsewhere (8 vs 4 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1053.20:
+
+      COMMON /SCRNS/ MASK (LX1,LY1,LZ1,LELV)                            
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1171456 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1178.21:
+
+      COMMON /CPRINT/ IFPRINT                                           
+                     1
+Warning: Named COMMON block 'cprint' at (1) shall be of the same size as elsewhere (4 vs 8 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1176.20:
+
+      COMMON /CTMP0/ TA  (LX2,LY2,LZ2,LELV)                             
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (131072 vs 65536 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:99.20:
+
+      COMMON /SCRUZ/ TA1    (LX1,LY1,LZ1,LELV)                          
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 262144 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:168.20:
+
+      COMMON /SCRUZ/ TB1   (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (884736 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2336.20:
+
+      COMMON /SCRMG/ TB1   (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (729088 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2329.20:
+
+      COMMON /SCRNS/ RESV1 (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1392640 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:360.20:
+
+      common /ctmp1/ wx  (lx1*ly1*lz1)                                  
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (6912 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1702.20:
+
+      COMMON /SCRNS/ TA1(LX1,LY1,LZ1,LELV)                              
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1548288 vs 1392640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1747.20:
+
+      COMMON /SCRUZ/ TA1 (LX1,LY1,LZ1,LELV)                             
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1671.20:
+
+      COMMON /SCRUZ/ TA1 (LX1,LY1,LZ1,LELV)                             
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3576.20:
+
+      common /ctmp0/ dudr(lx1,ly1,lz1)                                  
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (5184 vs 131072 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3513.20:
+
+      COMMON /CTMP0/ TA1  (LX1,LY1,LZ1,LELV)                            
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1714176 vs 131072 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1381.20:
+
+      COMMON /SCRNS/ TA1  (LX1,LY1,LZ1,LELV)                            
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4668.20:
+
+      common /scruz/ u(lx1*ly1*lz1),v(lx1*ly1*lz1),w(lx1*ly1*lz1)       
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (5184 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4838.20:
+
+      common /ctmp1/ ur(lxyz),us(lxyz),ut(lxyz)                         
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (15552 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4917.21:
+
+      common /dgradl/ d(ldg),dt(ldg),dg(ldg),dgt(ldg),jgl(ldg),jgt(ldg) 
+                     1
+Warning: Named COMMON block 'dgradl' at (1) shall be of the same size as elsewhere (37584 vs 46656 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4757.20:
+
+      common /ctmp1/ ur(lxyz),us(lxyz),ut(lxyz)                         
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (15552 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4984.21:
+
+      common /dgradl/ d(ldg),dt(ldg),dg(ldg),dgt(ldg),jgl(ldg),jgt(ldg) 
+                     1
+Warning: Named COMMON block 'dgradl' at (1) shall be of the same size as elsewhere (37584 vs 46656 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1585.20:
+
+      COMMON /SCRUZ/ TA1 (LX1,LY1,LZ1,LELV)                             
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:14.20:
+
+      COMMON /SCRNS/ RESV1 (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1392640 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:210.20:
+
+      COMMON /SCRMG/ WORK  (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (221184 vs 729088 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:1148.20:
+
+      COMMON /SCRMG/ TA   (LX2,LY2,LZ2,LELV)                            
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (131072 vs 729088 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2241.20:
+
+      COMMON /SCRCH/ TA2(LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'scrch' at (1) shall be of the same size as elsewhere (221184 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:2237.20:
+
+      COMMON /SCRMG/ Y1 (LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (884736 vs 729088 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:3654.20:
+
+      common /ctmp0/ dudr(lx1,ly1,lz1)                                  
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (5184 vs 1714176 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4145.20:
+
+      COMMON /CTMP1/ WORK(LXYZ1,LELT)                                   
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (221184 vs 663552 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/prepost.f -o obj/prepost.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4206.20:
+
+      COMMON /CTMP1/ RKX1  (LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (884736 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4520.20:
+
+      COMMON /SCRNS/ SXZ(LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier1.f:4516.20:
+
+      COMMON /SCRUZ/ W1 (LX1,LY1,LZ1,LELV)                              
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:912.38:
+
+     $   (m,mmx,ixb,ibb,ix,ib,ih1,ih2,ivar,n,ifvec,name6)               
+                                      1
+Warning: Actual argument contains too few elements for dummy argument 'ivar' (1/10) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:1132.53:
+
+      call proj_get_ivar(m,mmx,ixb,ibb,ix,ib,ih1,ih2,ivar,n,ifvec,name6)
+                                                     1
+Warning: Actual argument contains too few elements for dummy argument 'ivar' (1/10) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:1140.11:
+
+      ivar(2) = m ! Update number of saved vectors                      
+           1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:1278.26:
+
+        call hmhzpf (name,u,r,h1,h2,mask,mult,imsh,tol,maxi,isd,binvm1) 
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'u' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:1280.26:
+
+        call hmhzpf (name,u,r,h1,h2,mask,mult,imsh,tol,maxi,isd,bintm1) 
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'u' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:216.21:
+
+      COMMON /ORTHOX/ Pbar(LTOT2),Pnew(LTOT2),Pbrr(ltot2)               
+                     1
+Warning: Named COMMON block 'orthox' at (1) shall be of the same size as elsewhere (196608 vs 131072 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:363.21:
+
+      COMMON /ORTHOX/ Pbar(LTOT2),Pnew(LTOT2)                           
+                     1
+Warning: Named COMMON block 'orthox' at (1) shall be of the same size as elsewhere (131072 vs 196608 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:30.21:
+
+      COMMON /ORTHOX/ Pbar(LTOT2),Pnew(LTOT2)                           
+                     1
+Warning: Named COMMON block 'orthox' at (1) shall be of the same size as elsewhere (131072 vs 196608 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:119.21:
+
+      COMMON /ORTHOX/ Pbar(LTOT2),Pnew(LTOT2)                           
+                     1
+Warning: Named COMMON block 'orthox' at (1) shall be of the same size as elsewhere (131072 vs 196608 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:441.21:
+
+      COMMON /ORTHOX/ Pbar(LTOT2),Pnew(LTOT2)                           
+                     1
+Warning: Named COMMON block 'orthox' at (1) shall be of the same size as elsewhere (131072 vs 196608 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier4.f:1240.20:
+
+      common /scruz/ r (lt),ub(lt)                                      
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (442368 vs 131072 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:1649.37:
+
+      iprefix        = i_find_prefix(prefix,99)                         
+                                     1
+Warning: Rank mismatch in argument 'prefix' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:1661.31:
+
+      call restart_nfld( nfld, prefix ) ! Check for Restart option.     
+                               1
+Warning: Rank mismatch in argument 'prefix' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:425.37:
+
+      if (nid.eq.0) call dump_header(excode,p66,ierr)                   
+                                     1
+Warning: Rank mismatch in argument 'excodein' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:1928.32:
+
+      call outpost2(v1,v2,v3,vp,vt,itmp,name3)                          
+                                1
+Warning: Actual argument contains too few elements for dummy argument 'vt' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:878.20:
+
+      common /scruz/ ta(lx1,ly1,lz1,lelt)                               
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (221184 vs 126976 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:814.20:
+
+      common /scruz/ ta1(lx1,ly1,lz1,lelv)                              
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/prepost.f:2264.20:
+
+      common /SCRNS/ u4(2+lxo*lxo*lxo*6*lelt)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (663560 vs 221192 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/speclib.f -o obj/speclib.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/map2.f -o obj/map2.o
+/scratch/rvinuesa/nek1093/trunk/nek/map2.f:176.20:
+
+      common /ctmp1/  map_st(lelg_sm)                                   
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (4 vs 138240 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/map2.f:177.21:
+
+      common /vptsol/ iwork(0:lp)                                       
+                     1
+Warning: Named COMMON block 'vptsol' at (1) shall be of the same size as elsewhere (36 vs 15372448 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/turb.f -o obj/turb.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f -o obj/mvmesh.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/ic.f -o obj/ic.o
+/scratch/rvinuesa/nek1093/trunk/nek/turb.f:332.20:
+
+      COMMON /SCRCH/ TA(LX1,LY1,LZ1,LELV)                               
+                    1
+Warning: Named COMMON block 'scrch' at (1) shall be of the same size as elsewhere (221184 vs 192 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/turb.f:249.20:
+
+      COMMON /SCRCH/ TA(LX1,LY1,LZ1,LELV),TB(LX1,LY1,LZ1,LELV)          
+                    1
+Warning: Named COMMON block 'scrch' at (1) shall be of the same size as elsewhere (442368 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/turb.f:574.20:
+
+      COMMON /SCRMG/ VISKIN(LX1,LY1,LZ1,LELV)                           
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (222048 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/turb.f:578.20:
+
+      COMMON /SCRUZ/ V1(LX1,LY1,LZ1,LELV)                               
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:614.20:
+
+      COMMON /SCRUZ/ R1(LX1,LY1,LZ1),R2(LX1,LY1,LZ1),R3(LX1,LY1,LZ1)    
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (5184 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:507.20:
+
+      common /scruz/ r1(lx1,ly1,lz1),r2(lx1,ly1,lz1),r3(lx1,ly1,lz1)    
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (5184 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:87.20:
+
+      COMMON /SCRUZ/ FM1(LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (884736 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:116.20:
+
+      COMMON /SCRUZ/ FMT(LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (442368 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:535.20:
+
+      COMMON /SCRUZ/ R1(LX1,LY1,LZ1),R2(LX1,LY1,LZ1),R3(LX1,LY1,LZ1)    
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (5184 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:573.20:
+
+      COMMON /SCRUZ/ R1(LX1,LY1,LZ1),R2(LX1,LY1,LZ1),R3(LX1,LY1,LZ1)    
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (5184 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/mvmesh.f:968.20:
+
+      COMMON /SCRUZ/ XM3 (LX3,LY3,LZ3,LELT)                             
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/ssolv.f -o obj/ssolv.o
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:437.24:
+
+         IF (INDX1(LINE,'PRESOLV',7).NE.0) THEN                         
+                        1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (7/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1466.15:
+
+      I1=INDX1(S1,S2,L2)                                                
+               1
+Warning: Rank mismatch in argument 's1' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:441.34:
+
+            CALL CSPLIT(CDUM,LINE,' ',1)                                
+                                  1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:458.33:
+
+               IF (INDX_CUT(LINE,'U',1).NE.0) THEN                      
+                                 1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:463.33:
+
+               IF (INDX_CUT(LINE,'T',1).NE.0) THEN                      
+                                 1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:471.36:
+
+                  IF (INDX_CUT(LINE,S2,2).NE.0) THEN                    
+                                    1
+Warning: Actual argument contains too few elements for dummy argument 's2' (2/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1093.30:
+
+      call csplit(fname,rsopt,' ',1)                                    
+                              1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1095.22:
+
+      if (indx1(fname,'.',1).eq.0) then                                 
+                      1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1130.28:
+
+         ITO=INDX_CUT(RSOPT,'TIME',4)                                   
+                            1
+Warning: Actual argument contains too few elements for dummy argument 's2' (4/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1134.31:
+
+            IT1=INDX_CUT(RSOPT,'=',1)                                   
+                               1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1843.23:
+
+      IFLDW=INDX1(WORK,' ',1)-1                                         
+                       1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1146.27:
+
+            IT1=INDX1(LINE,' ',1)                                       
+                           1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1153.28:
+
+         IXO=INDX_CUT(RSOPT,'X',1)                                      
+                            1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1160.28:
+
+         IVO=INDX_CUT(RSOPT,'U',1)                                      
+                            1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1167.28:
+
+         IPO=INDX_CUT(RSOPT,'P',1)                                      
+                            1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1173.28:
+
+         ITO=INDX_CUT(RSOPT,'T',1)                                      
+                            1
+Warning: Actual argument contains too few elements for dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1181.31:
+
+            ipo=indx_cut(rsopt,s2,2)                                    
+                               1
+Warning: Actual argument contains too few elements for dummy argument 's2' (2/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2656.29:
+
+            i1 = indx1(fname,eight,k)                                   
+                             1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (8/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2348.24:
+
+      if (indx2(hdr,132,'#std',4).eq.1) then                            
+                        1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (4/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2436.34:
+
+      call parse_std_hdr_2006(hdr,rdcode)  ! try the original header for
+                                  1
+Warning: Actual argument contains too few elements for dummy argument 'rlcode' (10/20) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2325.28:
+
+               call mapab4r(u(1,ei),wk(l        ),nxr,1)                
+                            1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2326.28:
+
+               call mapab4r(v(1,ei),wk(l+  nxyzw),nxr,1)                
+                            1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2328.28:
+
+     $         call mapab4r(w(1,e),wk(l+2*nxyzw),nxr,1)                 
+                            1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2330.36:
+
+               call mapab  (u(1,ei),wk(l        ),nxr,1)                
+                                    1
+Warning: Type mismatch in argument 'y' at (1); passed REAL(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2331.36:
+
+               call mapab  (v(1,ei),wk(l+  nxyzw),nxr,1)                
+                                    1
+Warning: Type mismatch in argument 'y' at (1); passed REAL(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2333.36:
+
+     $         call mapab  (w(1,ei),wk(l+2*nxyzw),nxr,1)                
+                                    1
+Warning: Type mismatch in argument 'y' at (1); passed REAL(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2535.38:
+
+            call mfi_getv(xm1,ym1,zm1,wk,lwk,.false.)                   
+                                      1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2537.38:
+
+            call mfi_getv(xm1,ym1,zm1,wk,lwk,.true.)                    
+                                      1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2548.29:
+
+               call mfi_getv(bx,by,bz,wk,lwk,.false.)                   
+                             1
+Warning: Actual argument contains too few elements for dummy argument 'u' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2551.38:
+
+               call mfi_getv(vx,vy,vz,wk,lwk,.false.)                   
+                                      1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2554.35:
+
+            call mfi_getv(vx,vy,vz,wk,lwk,.true.)                       
+                                   1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2180.28:
+
+               call mapab4r(u(1,ei),wk(l        ),nxr,1)                
+                            1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2182.36:
+
+               call mapab  (u(1,ei),wk(l        ),nxr,1)                
+                                    1
+Warning: Type mismatch in argument 'y' at (1); passed REAL(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2564.30:
+
+            call mfi_gets(pm1,wk,lwk,.false.)                           
+                              1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2566.30:
+
+            call mfi_gets(pm1,wk,lwk,.true.)                            
+                              1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2576.28:
+
+            call mfi_gets(t,wk,lwk,.false.)                             
+                            1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2578.28:
+
+            call mfi_gets(t,wk,lwk,.true.)                              
+                            1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2590.44:
+
+               call mfi_gets(t(1,1,1,1,k+1),wk,lwk,.false.)             
+                                            1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:2592.44:
+
+               call mfi_gets(t(1,1,1,1,k+1),wk,lwk,.true.)              
+                                            1
+Warning: Type mismatch in argument 'wk' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1418.27:
+
+      i1_from_char = indx2(n10,10,s1,1)-1                               
+                           1
+Warning: Character length of actual argument shorter than of dummy argument 's1' (10/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1247.25:
+
+            call mapab4r(sdump(1,ieg),tdump,nxr,1)                      
+                         1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1279.28:
+
+               call mapab4r(sdump(1,ie),tdump,nxr,1)                    
+                            1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:966.38:
+
+     $            call copy(t(1,1,1,1,2),sdmp2(1,1),ntott)              
+                                      1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:264.33:
+
+         if (ifsplit) call dsavg(pr)  ! continuous pressure             
+                                 1
+Warning: Actual argument contains too few elements for dummy argument 'u' (8192/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1875.23:
+
+      IFLDW=INDX1(WORK,' ',1)-1                                         
+                       1
+Warning: Character length of actual argument shorter than of dummy argument 's2' (1/132) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/ssolv.f:508.20:
+
+      COMMON /SCRUZ/  W1  (LX1,LY1,LZ1,LELV)                            
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (729088 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:1370.20:
+
+      common /ctmp0/  xa(lxyzr)      ,xb(lx1,ly1,lzr) ,xc(lxyzr)        
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (31296 vs 288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/ssolv.f:737.20:
+
+      COMMON /SCRMG/ DIVFLD (LX2,LY2,LZ2,LELV)                          
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (131072 vs 729088 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/ic.f:26.20:
+
+      common /ctmp1/ work(lx1,ly1,lz1,lelv)                             
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (223104 vs 69120 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/planx.f -o obj/planx.o
+mpif90 -c -I./inc_src -O3 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I./ /scratch/rvinuesa/nek1093/trunk/nek/math.f -o obj/math.o
+/scratch/rvinuesa/nek1093/trunk/nek/math.f:1544.21:
+
+      call sort(xout,work,n)                                            
+                     1
+Warning: Type mismatch in argument 'ind' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/planx.f:189.43:
+
+         CALL hmzpf2 (' BX ',OT1,IN1,H1,H2,B1MASK,VMULT,                
+                                           1
+Warning: Actual argument contains too few elements for dummy argument 'mask' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/planx.f:191.43:
+
+         CALL hmzpf2 (' BY ',OT2,IN2,H1,H2,B2MASK,VMULT,                
+                                           1
+Warning: Actual argument contains too few elements for dummy argument 'mask' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/planx.f:194.43:
+
+     $   CALL hmzpf2 (' BZ ',OT3,IN3,H1,H2,B3MASK,VMULT,                
+                                           1
+Warning: Actual argument contains too few elements for dummy argument 'mask' (1/216) at (1)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/mxm_wrapper.f -o obj/mxm_wrapper.o 
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f -o obj/hmholtz.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/gfdm_par.f -o obj/gfdm_par.o
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:1795.19:
+
+     $            ,dxtm1,dym1,dzm1,nx1,ny1,nz1,if3d)                    
+                   1
+Warning: Rank mismatch in argument 'drt' at (1) (scalar and rank-2)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:790.26:
+
+         call axhelm (w,p,h1,h2,imsh,isd)                               
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'helm1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:103.20:
+
+      COMMON /CTMP1/ DUDR  (LX1,LY1,LZ1)                                
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (10368 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:932.20:
+
+      common /ctmp0/ w(lx1,ly1,lz1)                                     
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1728 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:554.22:
+
+      COMMON  /CPRINT/ IFPRINT                                          
+                      1
+Warning: Named COMMON block 'cprint' at (1) shall be of the same size as elsewhere (4 vs 8 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:556.20:
+
+      COMMON /CTMP0/ W1   (LX1,LY1,LZ1,LELT)                            
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (442368 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:1508.22:
+
+      common /tdarray/ diagt(maxcg),upper(maxcg)                        
+                      1
+Warning: Named COMMON block 'tdarray' at (1) shall be of the same size as elsewhere (960 vs 14400 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:1122.20:
+
+      COMMON /CTMP0/ W(LX1,LX1),aa(lx1,lx1),bb(lx1,lx1)                 
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (222048 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hmholtz.f:1029.20:
+
+      COMMON /CTMP0/ W(LX1,LX1),aa(lx1,lx1),bb(lx1,lx1)                 
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (864 vs 884736 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/gfdm_op.f -o obj/gfdm_op.o
+/scratch/rvinuesa/nek1093/trunk/nek/gfdm_op.f:176.43:
+
+      call build_D1d_d(eigv,bw,dglgt,wglgt,wgl,eigs,length,nel,nxv,nxp  
+                                           1
+Warning: Rank mismatch in argument 'wm1' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/gfdm_op.f:103.53:
+
+     $                    ,cb0(1),cbn(1),dglgt,wglgt,wgl,bw,lbw)        
+                                                     1
+Warning: Rank mismatch in argument 'wgl' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/gfdm_op.f:118.53:
+
+     $                    ,cb0(2),cbn(2),dglgt,wglgt,wgl,bw,lbw)        
+                                                     1
+Warning: Rank mismatch in argument 'wgl' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/gfdm_op.f:132.56:
+
+     $                       ,cb0(3),cbn(3),dglgt,wglgt,wgl,bw,lbw)     
+                                                        1
+Warning: Rank mismatch in argument 'wgl' at (1) (scalar and rank-1)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/gfdm_solve.f -o obj/gfdm_solve.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/subs1.f -o obj/subs1.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/subs2.f -o obj/subs2.o
+/scratch/rvinuesa/nek1093/trunk/nek/subs2.f:1860.30:
+
+         CALL QMASK (R1,R2,R3,B1MASK,B2MASK,B3MASK,NEL)                 
+                              1
+Warning: Actual argument contains too few elements for dummy argument 'r1mask' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs2.f:44.20:
+
+      common /ctmp0/ exz(lx1,ly1,lz1,lelt)                              
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (442368 vs 1728 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs2.f:40.20:
+
+      common /ctmp1/ exx(lx1,ly1,lz1,lelt)                              
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (884736 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs2.f:1804.20:
+
+      common /ctmp0/ wa(lx1,ly1,lz1,lelt)                               
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (221184 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:2057.20:
+
+      call axhmsf  (a1,a2,a3,p1,p2,p3,h1,h2,matmod)                     
+                    1
+Warning: Actual argument contains too few elements for dummy argument 'au1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:2103.43:
+
+         call axstrs_nds(a1,a2,a3,w1,w2,w3,h1,h2,matmod,nel)            
+                                           1
+Warning: Rank mismatch in argument 'h1' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:2260.49:
+
+      call get_local_crs_galerkin_strs(a,ncr,nxc,h1,h2,matmod)          
+                                                 1
+Warning: Rank mismatch in argument 'h1' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:54.42:
+
+      if (ifcrsl) call set_up_h1_crs_strs(h1,h2,ifield,matmod)          
+                                          1
+Warning: Rank mismatch in argument 'h1' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:108.23:
+
+         call axhmsf  (ap1,ap2,ap3,p1,p2,p3,h1,h2,matmod)               
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'au1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:1870.38:
+
+            call fcsum2(usum_f,asum_f,u,e,f)                            
+                                      1
+Warning: Actual argument contains too few elements for dummy argument 'x' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:2046.20:
+
+      call axhmsf  (a1,a2,a3,p1,p2,p3,h1,h2,matmod)                     
+                    1
+Warning: Actual argument contains too few elements for dummy argument 'au1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:771.20:
+
+      common /ctmp0/  stc(lx1,ly1,lz1),sigst(lx1,ly1),dtst(lx1,ly1)     
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (2304 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:887.20:
+
+      common /ctmp0/  xfm1(lx1,ly1),yfm1(lx1,ly1),zfm1(lx1,ly1)         
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (864 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:888.20:
+
+      common /ctmp1/  drm1(lx1,lx1),drtm1(lx1,ly1)                      
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (1152 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:890.20:
+
+      common /scrmg/  xrm1(lx1,ly1),yrm1(lx1,ly1),zrm1(lx1,ly1)         
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (1728 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:841.20:
+
+      common /ctmp0/  xfm1(lx1),yfm1(lx1),t1xf(lx1),t1yf(lx1)           
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (192 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:462.20:
+
+      common /ctmp0/ x(lx1,ly1,lz1,lelv)                                
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (442368 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:661.20:
+
+      common /scrmg/ zrm1 (lx1,ly1,lz1,lelv)                            
+                    1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:1893.20:
+
+      common /ctmp0/ w(lx1,ly1,lz1)                                     
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (1728 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:1684.20:
+
+      common /ctmp1/ txx(lx1,ly1,lz1,lelt)                              
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (884736 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:2573.20:
+
+      common /ctmp0/ phi(lx1,ly1)                                       
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (288 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:1625.20:
+
+      common /scrsf/ t11(lx1,ly1,lz1,lelt)                              
+                    1
+Warning: Named COMMON block 'scrsf' at (1) shall be of the same size as elsewhere (884736 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:1708.20:
+
+      common /scrsf/ ur(lx1,ly1,lz1,lelt)                               
+                    1
+Warning: Named COMMON block 'scrsf' at (1) shall be of the same size as elsewhere (663552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/subs1.f:1980.20:
+
+      common /ctmp0/ gnum(lx1*ly1*lz1*lelt)                             
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (221184 vs 442368 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/genbox.f -o obj/genbox.o
+/scratch/rvinuesa/nek1093/trunk/nek/genbox.f:36.20:
+
+         call getrv(rfld,1,iend,7)                                      
+                    1
+Warning: Rank mismatch in argument 'r' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/genbox.f:162.37:
+
+     $                    call getr2(xc,yc,iend,7)                      
+                                     1
+Warning: Rank mismatch in argument 'r1' at (1) (scalar and rank-2)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/gmres.f -o obj/gmres.o
+/scratch/rvinuesa/nek1093/trunk/nek/gmres.f:573.27:
+
+      call dd_swap_vals(v1,v,gsh_dd)                                    
+                           1
+Warning: Actual argument contains too few elements for dummy argument 'v0' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/gmres.f:773.35:
+
+      call set_up_fast_1D_sem_op_a(s,eb0,eb1,l,r,ll,lm,lr,ah)           
+                                   1
+Warning: Actual argument contains too few elements for dummy argument 'g' (1/64) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/gmres.f:775.35:
+
+      call set_up_fast_1D_sem_op_b(g,bb0,bb1,l,r,ll,lm,lr,bh)           
+                                   1
+Warning: Actual argument contains too few elements for dummy argument 'g' (2/64) at (1)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/hsmg.f -o obj/hsmg.o
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:490.30:
+
+      call hsmg_schwarz_dssum(mg_work,l)                                
+                              1
+Warning: Rank mismatch in argument 'u' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:906.24:
+
+      call hsmg_do_fast(e,r,                                            
+                        1
+Warning: Rank mismatch in argument 'e' at (1) (rank-2 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:493.31:
+
+      call hsmg_fdm(mg_work(i),mg_work,l) ! Do the local solves         
+                               1
+Warning: Rank mismatch in argument 'r' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:1272.10:
+
+     $    e,mg_schwarz_wt(mg_schwarz_wt_index(l,mg_fld)),mg_nh(l))      
+          1
+Warning: Rank mismatch in argument 'e' at (1) (rank-3 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:1274.10:
+
+     $    e,mg_schwarz_wt(mg_schwarz_wt_index(l,mg_fld)),mg_nh(l))      
+          1
+Warning: Rank mismatch in argument 'e' at (1) (rank-4 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:451.31:
+
+      call hsmg_schwarz_wt    (e,l)          ! e  := W e                
+                               1
+Warning: Rank mismatch in argument 'e' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:547.30:
+
+      call hsmg_schwarz_dssum(mg_work,l)                                
+                              1
+Warning: Rank mismatch in argument 'u' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:551.31:
+
+      call hsmg_fdm(mg_work(i),mg_work,l)                               
+                               1
+Warning: Rank mismatch in argument 'r' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:2847.63:
+
+     $            (mg_g(p_g),mg_g(l_g),ng,nx,ny,nz,nxl,nyl,nzl,e,l,w)   
+                                                               1
+Warning: Type mismatch in argument 'e' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:2850.63:
+
+     $            (mg_b(p_b),mg_b(l_b)   ,nx,ny,nz,nxl,nyl,nzl,e,l,w)   
+                                                               1
+Warning: Type mismatch in argument 'e' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:2174.20:
+
+      common /hsmgw/ work(lx1*lx1)                                      
+                    1
+Warning: Named COMMON block 'hsmgw' at (1) shall be of the same size as elsewhere (288 vs 8192 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:2743.20:
+
+      common /ctmp0/ wi(2*lx1+4)                                        
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (128 vs 5184 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/convect.f -o obj/convect.o
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:315.20:
+
+      common /hsmgw/ work((lx1+2)*(lx1+2))                              
+                    1
+Warning: Named COMMON block 'hsmgw' at (1) shall be of the same size as elsewhere (512 vs 8192 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:279.20:
+
+      common /hsmgw/ work((lx1+2)*(lx1+2))                              
+                    1
+Warning: Named COMMON block 'hsmgw' at (1) shall be of the same size as elsewhere (512 vs 8192 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:807.20:
+
+      common /ctmp0/ b(2*lxm*lxm),w(2*lxm*lxm)                          
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (2048 vs 5184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:1413.20:
+
+      common /scrvh/ h1    (lx1,ly1,lz1,lelv),                          
+                    1
+Warning: Named COMMON block 'scrvh' at (1) shall be of the same size as elsewhere (442368 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:1891.20:
+
+      common /scrvh/ h1    (lx1,ly1,lz1,lelv),                          
+                    1
+Warning: Named COMMON block 'scrvh' at (1) shall be of the same size as elsewhere (442368 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:2259.20:
+
+      common /scrvh/ h1    (lx1,ly1,lz1,lelt),                          
+                    1
+Warning: Named COMMON block 'scrvh' at (1) shall be of the same size as elsewhere (442368 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/hsmg.f:2924.20:
+
+      common /ctmp0/ w(100000)                                          
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (800000 vs 5184 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/induct.f -o obj/induct.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/perturb.f -o obj/perturb.o
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:637.55:
+
+         call set_convect_cons(c(ix,1),c(iy,1),c(iz,1),u,v,w)           
+                                                       1
+Warning: Actual argument contains too few elements for dummy argument 'ux' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:639.55:
+
+         call set_convect_new (c(ix,1),c(iy,1),c(iz,1),u,v,w)           
+                                                       1
+Warning: Actual argument contains too few elements for dummy argument 'ux' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1581.25:
+
+      call full2face(uf ,u )                                            
+                         1
+Warning: Actual argument contains too few elements for dummy argument 'vol_ary' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1637.26:
+
+      call add_face2full( du , uf)  ! <--- this stmt.                   
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'vol_ary' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1639.26:
+
+      call fbinvert     ( du )      ! Right now works only for undeforme
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'rhs' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1436.25:
+
+      call full2face(uf ,u )                                            
+                         1
+Warning: Actual argument contains too few elements for dummy argument 'vol_ary' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1475.26:
+
+      call add_face2full( du , uf)  ! <--- this stmt.                   
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'vol_ary' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1477.26:
+
+      call fbinvert     ( du )      ! Right now works only for undeforme
+                          1
+Warning: Actual argument contains too few elements for dummy argument 'rhs' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:320.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ud(ldd)                    
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (23328 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:278.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ud(ldd)                    
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (23328 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1158.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ju(ldd),ud(ldd),tu(ldd)    
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (34992 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1102.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ju(ldd),ud(ldd),tu(ldd)    
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (34992 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:241.20:
+
+      call extrapp (pm,pmlag)                                           
+                    1
+Warning: Actual argument contains too few elements for dummy argument 'p' (1/64) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:887.21:
+
+      call cresvib  (besv1,besv2,besv3,h1,h2)                           
+                     1
+Warning: Actual argument contains too few elements for dummy argument 'resv1' (1/216) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:900.21:
+
+      call incomprn (vx,vy,vz,pr) ! project U onto div-free space       
+                     1
+Warning: Rank mismatch in argument 'ux' at (1) (scalar and rank-4)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:911.21:
+
+      call incomprn (bx,by,bz,pm) ! project B onto div-free space       
+                     1
+Warning: Rank mismatch in argument 'ux' at (1) (scalar and rank-4)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:467.36:
+
+      call curl(lf,b1,b2,b3,.false.,w1,w2)                              
+                                    1
+Warning: Rank mismatch in argument 'work1' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1538.20:
+
+      common /scrdg/ uf(lf),uxf(lf),uyf(lf),uzf(lf),upwind_wgt(lf)      
+                    1
+Warning: Named COMMON block 'scrdg' at (1) shall be of the same size as elsewhere (1109520 vs 1105920 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:304.20:
+
+      common /scrns/ w1    (lx1,ly1,lz1,lelv)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1392640 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:779.20:
+
+      common /scrcv/ uf(ltd),cf(ltd),cu(ltd)                            
+                    1
+Warning: Named COMMON block 'scrcv' at (1) shall be of the same size as elsewhere (34992 vs 58320 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:993.20:
+
+      common /cchar/ ct_vx(0:lorder) ! time for each slice in c_vx()    
+                    1
+Warning: Named COMMON block 'cchar' at (1) shall be of the same size as elsewhere (32 vs 40 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:189.20:
+
+      COMMON /SCRNS/ TA1(LX1,LY1,LZ1,LELV)                              
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1548288 vs 1392640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1052.20:
+
+      common /cchar/ ct_vx(0:lorder) ! time for each slice in c_vx()    
+                    1
+Warning: Named COMMON block 'cchar' at (1) shall be of the same size as elsewhere (32 vs 40 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:151.20:
+
+      common /scrns/ ta1 (lx1,ly1,lz1,lelv)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (663552 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/convect.f:1054.20:
+
+      common /scruz/ phi  (lx1*ly1*lz1*lelt)                            
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (442368 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:1331.20:
+
+      common /scrns/ wk(2*ltd)                                          
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (92016 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:24.20:
+
+      common /scrns/  resv1 (lx1,ly1,lz1,lelv)                          
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/induct.f:1608.20:
+
+      common /scrns/ ta1 (lx1,ly1,lz1,lelv)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:763.20:
+
+      COMMON /SCRNS/ TA (LX1,LY1,LZ1,LELT)                              
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (663552 vs 442368 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:700.20:
+
+      common /scruz/ ta (lx1,ly1,lz1,lelt)                              
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (884736 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:40.20:
+
+      COMMON /SCRNS/  RESV1 (LX1,LY1,LZ1,LELV)                          
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 663552 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:833.20:
+
+      common /scrns/ w1    (lx1,ly1,lz1,lelv)                           
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1392640 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:501.20:
+
+      common /scruz/ w1    (lx1,ly1,lz1,lelv)                           
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (729088 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:454.20:
+
+      COMMON /SCRNS/ TA1(LX1,LY1,LZ1,LELV)                              
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1548288 vs 1392640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:416.20:
+
+      common /scrns/ ta1 (lx1,ly1,lz1,lelv)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (663552 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:222.20:
+
+      COMMON /SCRNS/ TA1 (LX1*LY1*LZ1*LELV)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/perturb.f:143.20:
+
+      COMMON /SCRNS/ TA1 (LX1*LY1*LZ1*LELV)                             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier5.f -o obj/navier5.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier6.f -o obj/navier6.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier7.f -o obj/navier7.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier6.f:93.60:
+
+               call set_fem_data_l2(nel_proc,ndom,n_o,x,y,z,tri)        
+                                                            1
+Warning: Type mismatch in argument 'p' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/navier6.f:50.20:
+
+      common /ctmp0/ nv_to_t(2*ltotd)                                   
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (221184 vs 576 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier7.f:411.38:
+
+         call swap (bcsr(n1),nzero,n2,inverse)                          
+                                      1
+Warning: Type mismatch in argument 'temp' at (1); passed INTEGER(4) to REAL(8)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/navier8.f -o obj/navier8.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1992.33:
+
+      call ituple_sort(tuple,m,n,ky,nk,ind,wtuple)                      
+                                 1
+Warning: Rank mismatch in argument 'key' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:16.43:
+
+         call setvert3d(glo_num,ngv,nx,nel,vertex,ifcenter)             
+                                           1
+Warning: Actual argument contains too few elements for dummy argument 'vertex' (1/8) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:18.43:
+
+         call setvert2d(glo_num,ngv,nx,nel,vertex,ifcenter)             
+                                           1
+Warning: Actual argument contains too few elements for dummy argument 'vertex' (1/4) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1180.29:
+
+      call specmpn(b,nb,a,na,ibat,iba,if3d,w,ldw)                       
+                             1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:52.34:
+
+      call map_f_to_c_l2_bilin(uf,vf,w)                                 
+                                  1
+Warning: Actual argument contains too few elements for dummy argument 'uf' (1/8192) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1141.29:
+
+      call specmpn(a,na,b,nb,iba,ibat,if3d,w,ldw)                       
+                             1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:54.31:
+
+      call map_c_to_f_l2_bilin(uf,uc,w)                                 
+                               1
+Warning: Actual argument contains too few elements for dummy argument 'uf' (1/8192) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:916.29:
+
+      call specmpn(a,na,b,nb,iba,ibat,if3d,w,ldw)                       
+                             1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:592.32:
+
+            call a_crs_3d(a_loc,h1,h2,x,y,z,ie)                         
+                                1
+Warning: Actual argument contains too few elements for dummy argument 'h1' (1/8) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1356.34:
+
+      call map_f_to_c_h1_bilin(vc,uf)   ! additive Schwarz              
+                                  1
+Warning: Actual argument contains too few elements for dummy argument 'uf' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1366.31:
+
+      call map_c_to_f_h1_bilin(uf,uc)                                   
+                               1
+Warning: Actual argument contains too few elements for dummy argument 'uf' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:2564.29:
+
+      call specmpn(a,na,b,nb,iba,ibat,if3d,w,ldw)                       
+                             1
+Warning: Rank mismatch in argument 'ba' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1449.20:
+
+      common /ctmp0/ w(2,2,lx1),v(2,ly1,lz1,lelt)                       
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (73920 vs 25152 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/fast3d.f -o obj/fast3d.o
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:2376.21:
+
+      common  /scrns/ ind,etuple                                        
+                     1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (81920 vs 774120 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:2017.21:
+
+      common  /scrmg/ edge,enum,fnum                                    
+                     1
+Warning: Named COMMON block 'scrmg' at (1) shall be of the same size as elsewhere (21504 vs 6144 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:2022.21:
+
+      common  /scrns/ ind,etuple                                        
+                     1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (245760 vs 774120 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:108.20:
+
+      common /scrns/ w(7*lx1*ly1*lz1*lelv)                              
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (774144 vs 774120 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:109.21:
+
+      common /vptsol/ a(27*lx1*ly1*lz1*lelv)                            
+                     1
+Warning: Named COMMON block 'vptsol' at (1) shall be of the same size as elsewhere (5971968 vs 15372448 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1337.21:
+
+      common /scrpre/ uc(lcr*lelt)                                      
+                     1
+Warning: Named COMMON block 'scrpre' at (1) shall be of the same size as elsewhere (8192 vs 11648 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier8.f:1339.21:
+
+      common /scrxxt/ cmlt(lcr,lelv),mask(lcr,lelv)                     
+                     1
+Warning: Named COMMON block 'scrxxt' at (1) shall be of the same size as elsewhere (12288 vs 16384 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:1340.51:
+
+      call gaujordf  (Lj,nx,nx,indr,indc,ipiv,ierr,rmult)               
+                                                   1
+Warning: Rank mismatch in argument 'rmult' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2712.23:
+
+      call z_average(u,ux,w1,w2)                                        
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'u' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2713.23:
+
+      call z_average(v,uy,w1,w2)                                        
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'u' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2714.23:
+
+      call z_average(w,uz,w1,w2)                                        
+                       1
+Warning: Actual argument contains too few elements for dummy argument 'u' (1/27648) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2861.31:
+
+      call y_avg_buff(ur,w ,ut,c2,'ub',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2862.31:
+
+      call y_avg_buff(wr,wp,wt,c2,'u2',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2869.31:
+
+      call y_avg_buff(wr,wt,wp,c2,'uv',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2871.31:
+
+      call y_ins_buff(ur,w ,ut,c2,'ui',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2905.31:
+
+      call z_avg_buff(u ,v ,w ,c2,'ub',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2906.31:
+
+      call z_avg_buff(wr,wt,wp,c2,'u2',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2913.31:
+
+      call z_avg_buff(wr,wt,wp,c2,'uv',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2915.31:
+
+      call z_ins_buff(u ,v ,w ,c2,'ui',icount)                          
+                               1
+Warning: Rank mismatch in argument 'c2' at (1) (scalar and rank-1)
+/scratch/rvinuesa/nek1093/trunk/nek/fast3d.f:553.46:
+
+      call set_up_1D_geom(dx,lbc,rbc,ll,lm,lr,z,nz)                     
+                                              1
+Warning: Actual argument contains too few elements for dummy argument 'z' (1/2) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/fast3d.f:1390.33:
+
+      call set_up_fast_1D_sem_op(s,eb0,eb1,l,r,ll,lm,lr,bh,dgl,0)       
+                                 1
+Warning: Actual argument contains too few elements for dummy argument 'g' (1/36) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/fast3d.f:932.49:
+
+      call set_up_1D_geom_ax(dx,lbc,rbc,ll,lm,lr,z,y,nz)                
+                                                 1
+Warning: Actual argument contains too few elements for dummy argument 'z' (1/2) at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3686.34:
+
+      call z_average          (ua,u,w1,w2)                              
+                                  1
+Warning: Rank mismatch in argument 'u' at (1) (rank-4 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3687.31:
+
+      call z_average_transpose(u,ua) ! distribute ua to each z-plane    
+                               1
+Warning: Rank mismatch in argument 'u' at (1) (rank-4 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:248.20:
+
+      common /scrns/         pm1(lx1,ly1,lz1,lelv)                      
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1548288 vs 1105920 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:1928.20:
+
+      common /scrns/         sij (lx1*ly1*lz1*6*lelv)                   
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:1935.20:
+
+      common /scruz/         ur(lr),us(lr),ut(lr)                       
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (15552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2292.21:
+
+      common /scravg/ ua(lt),va(lt),wa(lt),pa(lt)                       
+                     1
+Warning: Named COMMON block 'scravg' at (1) shall be of the same size as elsewhere (884736 vs 368640 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2293.20:
+
+      common /scrns/ ta(lt,ldimt)                                       
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (221184 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2466.21:
+
+      common /scravg/ ua(lyavg)                                         
+                     1
+Warning: Named COMMON block 'scravg' at (1) shall be of the same size as elsewhere (864 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:2491.21:
+
+      common /scravg/ w1(lyavg)                                         
+                     1
+Warning: Named COMMON block 'scravg' at (1) shall be of the same size as elsewhere (576 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3082.20:
+
+      common /scrns/         sij (lx1*ly1*lz1*6*lelv)                   
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (1327104 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3089.20:
+
+      common /scruz/         ur(lr),us(lr),ut(lr)                       
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (15552 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3276.20:
+
+      common /scrns/ xb(lt,lelt),yb(lt,lelt),zb(lt,lelt)                
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (663552 vs 1548288 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3277.20:
+
+      common /scruz/ tmsk(lt,lelt),tmlt(lt,lelt),w1(lt),w2(lt)          
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (445824 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3682.21:
+
+      common /scravg/ ua(lyavg)                                         
+                     1
+Warning: Named COMMON block 'scravg' at (1) shall be of the same size as elsewhere (221184 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3786.21:
+
+      common /scravg/ ua(lyavg)                                         
+                     1
+Warning: Named COMMON block 'scravg' at (1) shall be of the same size as elsewhere (144 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:3882.21:
+
+      common /scravg/ ua(lyavg)                                         
+                     1
+Warning: Named COMMON block 'scravg' at (1) shall be of the same size as elsewhere (144 vs 884736 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:4035.20:
+
+      common /ctmp0/ f(lxx),wk1(lxyz),wk2(lxyz),wk3(lxyz)               
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (5472 vs 225304 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:4058.20:
+
+      common /ctmp0/ f(lxx),wk1(lxyz),wk2(lxyz),wk3(lxyz),diag(lx1)     
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (5520 vs 225304 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:4085.20:
+
+      common /ctmp1/ w(lt,lelt),ur(lt),us(lt),ut(lt),w1(2*lt)           
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (229824 vs 5184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/navier5.f:4489.20:
+
+      common /ctmp1/ w(lw)                                              
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (5184 vs 229824 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/fasts.f -o obj/fasts.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/calcz.f -o obj/calcz.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/byte.c -o obj/byte.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/chelpers.c -o obj/chelpers.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/byte_mpi.f -o obj/byte_mpi.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/postpro.f -o obj/postpro.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cvode_driver.f -o obj/cvode_driver.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/nek_comm.c -o obj/nek_comm.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/init_plugin.f -o obj/init_plugin.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/setprop.f -o obj/setprop.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/qthermal.f -o obj/qthermal.o
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:724.26:
+
+          call gen_int_gz(j,jt,w,n,z,m)                                 
+                          1
+Warning: Type mismatch in argument 'j' at (1); passed INTEGER(4) to REAL(8)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:753.26:
+
+          call gen_int_gz(j,jt,w,n,z,m)                                 
+                          1
+Warning: Type mismatch in argument 'j' at (1); passed INTEGER(4) to REAL(8)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cvode_aux.f -o obj/cvode_aux.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/makeq_aux.f -o obj/makeq_aux.o
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1509.20:
+
+      common /scrns/ vbc(5,6,lblock),wk(5*6*lblock)                     
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (240000 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1510.20:
+
+      common /scruz/ ibc(6,lblock)                                      
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (12000 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1413.20:
+
+      common /scrns/ vcurve(5,12,lblock),wk(5*12*lblock)                
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (480000 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1414.20:
+
+      common /scruz/ icurve(12,lblock)                                  
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (24000 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1595.20:
+
+      common /scrns/ x3(27),y3(27),z3(27),xyz(3,3)                      
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (720 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1308.20:
+
+      common /scrns/ xyz(lv,ldim,lblock),wk(lv*ldim*lblock)             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (384000 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1309.20:
+
+      common /scruz/ igr(lblock)                                        
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (4000 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1167.20:
+
+      common /scrns/ vbc(5,6,lblock),wk(5*6*lblock)                     
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (240000 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1168.20:
+
+      common /scruz/ ibc(6,lblock)                                      
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (12000 vs 221184 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/papi.f -o obj/papi.o
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1056.20:
+
+      common /scrns/ vcurve(5,12,lblock),wk(5*12*lblock)                
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (480000 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1057.20:
+
+      common /scruz/ icurve(12,lblock)                                  
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (24000 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:863.20:
+
+      common /scrns/ xyz(lv,ldim,lblock),wk(lv*ldim*lblock)             
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (384000 vs 1327104 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:864.20:
+
+      common /scruz/ igr(lblock)                                        
+                    1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (4000 vs 221184 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/papi.f:5.25:
+
+      call getflops_papi(flops,mflops)                                  
+                         1
+Warning: Type mismatch in argument 'flops' at (1); passed INTEGER(8) to REAL(8)
+mpif90 -c  -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/3rd_party/nek_in_situ.f -o obj/nek_in_situ.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f -o obj/drive1_cmt.o
+/scratch/rvinuesa/nek1093/trunk/nek/postpro.f:1674.22:
+
+      common   /SCRUZ/ pts,fieldout,buf                                 
+                      1
+Warning: Named COMMON block 'scruz' at (1) shall be of the same size as elsewhere (56 vs 221184 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/drive2_cmt.f -o obj/drive2_cmt.o
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f:240.30:
+
+            call copy(U(1,1,1,2,e),vx(1,1,1,e),nxyz1)                   
+                              1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f:241.30:
+
+            call copy(U(1,1,1,3,e),vy(1,1,1,e),nxyz1)                   
+                              1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f:242.30:
+
+            call copy(U(1,1,1,4,e),vz(1,1,1,e),nxyz1)                   
+                              1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f:243.30:
+
+            call copy(U(1,1,1,5,e),t(1,1,1,e,3),nxyz1)                  
+                              1
+Warning: Array reference at (1) is out of bounds (5 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f:243.45:
+
+            call copy(U(1,1,1,5,e),t(1,1,1,e,3),nxyz1)                  
+                                             1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/drive1_cmt.f:244.45:
+
+            call copy(U(1,1,1,1,e),t(1,1,1,e,2),nxyz1)                  
+                                             1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 5
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f -o obj/driver3_cmt.o
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:16.42:
+
+         call invcol3(vx(1,1,1,e),u(1,1,1,irpu,e),u(1,1,1,irg,e),nxyz)  
+                                          1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:17.42:
+
+         call invcol3(vy(1,1,1,e),u(1,1,1,irpv,e),u(1,1,1,irg,e),nxyz)  
+                                          1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:19.42:
+
+         call invcol3(vz(1,1,1,e),u(1,1,1,irpw,e),u(1,1,1,irg,e),nxyz)  
+                                          1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:23.27:
+
+     >             u(1,1,1,irpu,e),u(1,1,1,irpv,e),u(1,1,1,irpw,e),     
+                           1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:23.43:
+
+     >             u(1,1,1,irpu,e),u(1,1,1,irpv,e),u(1,1,1,irpw,e),     
+                                           1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:23.59:
+
+     >             u(1,1,1,irpu,e),u(1,1,1,irpv,e),u(1,1,1,irpw,e),     
+                                                           1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:24.27:
+
+     >             u(1,1,1,irpu,e),u(1,1,1,irpv,e),u(1,1,1,irpw,e),nxyz)
+                           1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:24.43:
+
+     >             u(1,1,1,irpu,e),u(1,1,1,irpv,e),u(1,1,1,irpw,e),nxyz)
+                                           1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:24.59:
+
+     >             u(1,1,1,irpu,e),u(1,1,1,irpv,e),u(1,1,1,irpw,e),nxyz)
+                                                           1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:26.35:
+
+            call vdot2(scr,u(1,1,1,irpu,e),u(1,1,1,irpv,e),             
+                                   1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:26.51:
+
+            call vdot2(scr,u(1,1,1,irpu,e),u(1,1,1,irpv,e),             
+                                                   1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:27.35:
+
+     >                     u(1,1,1,irpu,e),u(1,1,1,irpv,e),nxyz)        
+                                   1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:27.51:
+
+     >                     u(1,1,1,irpu,e),u(1,1,1,irpv,e),nxyz)        
+                                                   1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/driver3_cmt.f:64.24:
+
+         vtrans(i,j,k,e,icv)= cv*rho                                    
+                        1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/face.f -o obj/face.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/ausm.f -o obj/ausm.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/MixtPerf.f -o obj/MixtPerf.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/intpdiff.f -o obj/intpdiff.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/diffusive_cmt.f -o obj/diffusive_cmt.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f -o obj/eqnsolver_cmt.o
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diffusive_cmt.f:305.26:
+
+            vdiff(i,1,1,e,ilam) = lambda                                
+                          1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:149.37:
+
+     >                 vdiff(1,1,1,e,ilam),                             
+                                     1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:151.38:
+
+     >                 vtrans(1,1,1,e,icv))                             
+                                      1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:331.40:
+
+     &                       +  U(i,j,k,4,e)*FFZ)/ U(i,j,k,1,e)         
+                                        1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:330.59:
+
+               usrf(i,j,k,5) = (U(i,j,k,2,e)*FFX + U(i,j,k,3,e)*FFY     
+                                                           1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:330.40:
+
+               usrf(i,j,k,5) = (U(i,j,k,2,e)*FFX + U(i,j,k,3,e)*FFY     
+                                        1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:95.20:
+
+      common /ctmp1/ jdu(ldd,toteq),visco(lx1,ly1,lz1)                  
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (3456 vs 11664 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:209.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ju(ldd),ud(ldd),tu(ldd)    
+                    1
+Warning: Padding of 4 bytes required before 'ud' in COMMON 'ctmp1' at (1); reorder elements or use -fno-align-commons
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:209.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ju(ldd),ud(ldd),tu(ldd)    
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (32080 vs 11664 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:261.20:
+
+      common /ctmp1/ ur(ldd),us(ldd),ut(ldd),ju(ldd),ud(ldd),tu(ldd)    
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (34992 vs 32080 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/eqnsolver_cmt.f:353.20:
+
+      common /ctmp1/ jduk(ld2,toteq),jdukt(toteq,ld2),scr(ctmp1pad) ! ha
+                    1
+Warning: Named COMMON block 'ctmp1' at (1) shall be of the same size as elsewhere (11016 vs 34992 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/surface_fluxes.f -o obj/surface_fluxes.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/bc.f -o obj/bc.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/inflow_bc.f -o obj/inflow_bc.o
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/surface_fluxes.f:41.37:
+
+      call fillq(icvf,vtrans(1,1,1,1,icv),fatface(iqm),fatface(iqp))    
+                                     1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/surface_fluxes.f:46.40:
+
+         call fillq(ilamf,vdiff(1,1,1,1,ilam),fatface(iqm),fatface(iqp))
+                                        1
+Warning: Array reference at (1) is out of bounds (3 > 2) in dimension 5
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/outflow_bc.f -o obj/outflow_bc.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/wall_bc.f -o obj/wall_bc.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/step.f -o obj/step.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/filters_cmt.f -o obj/filters_cmt.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f -o obj/diagnostics.o
+mpif90 -c -I./inc_src -O3 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I./ /scratch/rvinuesa/nek1093/trunk/nek/mxm_std.f -o obj/mxm_std.o
+mpif90 -c -I./inc_src -O0      -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I./ /scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f -o obj/blas.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src IO_tools.f -o obj/IO_tools.o
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:80.44:
+
+         call copy(otvar(1,1,1,e,2),u(1,1,1,2,e),n)                     
+                                            1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:81.44:
+
+         call copy(otvar(1,1,1,e,3),u(1,1,1,3,e),n)                     
+                                            1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:82.44:
+
+         call copy(otvar(1,1,1,e,4),u(1,1,1,4,e),n)                     
+                                            1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:83.44:
+
+         call copy(otvar(1,1,1,e,5),u(1,1,1,5,e),n)                     
+                                            1
+Warning: Array reference at (1) is out of bounds (5 > 1) in dimension 4
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:192.33:
+
+     $         ,rhseqs(1),rhseqs(2),rhseqs(3),rhseqs(4)                 
+                                 1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:192.43:
+
+     $         ,rhseqs(1),rhseqs(2),rhseqs(3),rhseqs(4)                 
+                                           1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:192.53:
+
+     $         ,rhseqs(1),rhseqs(2),rhseqs(3),rhseqs(4)                 
+                                                     1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:193.23:
+
+     $         ,rhseqs(5)                                               
+                       1
+Warning: Array reference at (1) is out of bounds (5 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:205.33:
+
+     $         ,rhseqs(1),rhseqs(2),rhseqs(3),rhseqs(4)                 
+                                 1
+Warning: Array reference at (1) is out of bounds (2 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:205.43:
+
+     $         ,rhseqs(1),rhseqs(2),rhseqs(3),rhseqs(4)                 
+                                           1
+Warning: Array reference at (1) is out of bounds (3 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:205.53:
+
+     $         ,rhseqs(1),rhseqs(2),rhseqs(3),rhseqs(4)                 
+                                                     1
+Warning: Array reference at (1) is out of bounds (4 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:206.23:
+
+     $         ,rhseqs(5)                                               
+                       1
+Warning: Array reference at (1) is out of bounds (5 > 1) in dimension 1
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:100.20:
+
+      COMMON /SCRNS/      OTVAR(LX1,LY1,LZ1,lelcmt,6)                   
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (10368 vs 12096 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/cmt/diagnostics.f:281.20:
+
+      common /scrns/         sij (lx1*ly1*lz1*6*lelcmt)                 
+                    1
+Warning: Named COMMON block 'scrns' at (1) shall be of the same size as elsewhere (10368 vs 12096 bytes)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:9764.15:
+
+      GO TO IGO,(120,150,180,210)                                       
+               1
+Warning: Deleted feature: Assigned GOTO statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:9770.72:
+
+               ASSIGN 120 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:9782.72:
+
+               ASSIGN 150 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:9795.72:
+
+               ASSIGN 180 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:9806.72:
+
+               ASSIGN 210 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:17277.15:
+
+      GO TO IGO,(120,150,180,210)                                       
+               1
+Warning: Deleted feature: Assigned GOTO statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:17283.72:
+
+               ASSIGN 120 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:17295.72:
+
+               ASSIGN 150 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:17308.72:
+
+               ASSIGN 180 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/3rd_party/blas.f:17319.72:
+
+               ASSIGN 210 TO IGO                                        
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src chkpoint.f -o obj/chkpoint.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src/ uparam.f -o obj/uparam.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/statistics.f -o obj/statistics.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/statistics_2DIO.f -o obj/statistics_2DIO.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/statistics_2D_usr.f -o obj/statistics_2D_usr.o
+stats/statistics.f:466.20:
+
+      common /ctmp0/ rtmp                                               
+                    1
+Warning: Named COMMON block 'ctmp0' at (1) shall be of the same size as elsewhere (73728 vs 36864 bytes)
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/statistics_2D_debug.f -o obj/statistics_2D_debug.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/time_series.f -o obj/time_series.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/time_seriesIO.f -o obj/time_seriesIO.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src stats/pts_redistribute.f -o obj/pts_redistribute.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ -I./inc_src/ rt_filter.f -o obj/rt_filter.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f -o obj/comm_mpi.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/nek1093/trunk/nek/singlmesh.f -o obj/singlmesh.o
+mpif90 -c -I./inc_src -O0      -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I./ /scratch/rvinuesa/nek1093/trunk/nek/3rd_party/dsygv.f -o obj/dsygv.o
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:298.17:
+
+      call bcast(item,isize)                                            
+                 1
+Warning: Type mismatch in argument 'buf' at (1); passed INTEGER(4) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:1033.28:
+
+            call crecv(type,w,bytes)                                    
+                            1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:1055.38:
+
+      if (nid .ne. 0) call csend(type,x,bytes,parent,nullpid)           
+                                      1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:1066.22:
+
+           call csend(typer,x,bytes,jnid,nullpid)                       
+                      1
+Warning: Type mismatch in argument 'mtype' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:1068.22:
+
+           call crecv(typer,x,bytes)                                    
+                      1
+Warning: Type mismatch in argument 'mtype' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:813.15:
+
+      call gop(tmsg,t1,'+  ',1)                                         
+               1
+Warning: Rank mismatch in argument 'x' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:818.24:
+
+         msg  = irecv(1,y,1)                                            
+                        1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:819.22:
+
+         call csend(1,x,1,nodeb,0)   ! Initiate send, to synch.         
+                      1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:824.27:
+
+            msg  = irecv(i,y,len)                                       
+                           1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:825.25:
+
+            call csend(i,x,len,nodeb,0)                                 
+                         1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:834.22:
+
+         call crecv(1,y,1)           ! Initiate send, to synch.         
+                      1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:835.22:
+
+         call csend(1,x,1,nodea,0)                                      
+                      1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:839.25:
+
+            call crecv(i,y,len)                                         
+                         1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:840.25:
+
+            call csend(i,x,len,nodea,0)                                 
+                         1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:848.15:
+
+      call gop(tmsg,t1,'+  ',1)                                         
+               1
+Warning: Rank mismatch in argument 'x' at (1) (rank-1 and scalar)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:742.31:
+
+            msg  = irecv(itest,y,1)                                     
+                               1
+Warning: Type mismatch in argument 'x' at (1); passed REAL(8) to INTEGER(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:743.29:
+
+            call csend(itest,x,1,nodeb,0)   ! Initiate send, to synch.  
+                             1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:770.29:
+
+            call crecv(itest,y,1)           ! Initiate send, to synch.  
+                             1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:771.29:
+
+            call csend(itest,x,1,nodea,0)                               
+                             1
+Warning: Type mismatch in argument 'buf' at (1); passed REAL(8) to REAL(4)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:662.72:
+
+     $      call ping_loop1(t1,t0,len,nloop,nodea,nodeb,nid,x,y,x,y)    
+                                                                        1
+Warning: More actual than formal arguments in procedure call at (1)
+/scratch/rvinuesa/nek1093/trunk/nek/comm_mpi.f:664.72:
+
+     $      call ping_loop2(t1,t0,len,nloop,nodea,nodeb,nid,x,y,x,y)    
+                                                                        1
+Warning: More actual than formal arguments in procedure call at (1)
+mpif90 -c -I./inc_src -O0      -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I./ /scratch/rvinuesa/nek1093/trunk/nek/3rd_party/ssygv.f -o obj/ssygv.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/gs.c -o obj/jl_gs.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/sort.c -o obj/jl_sort.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/sarray_transfer.c -o obj/jl_sarray_transfer.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/sarray_sort.c -o obj/jl_sarray_sort.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/gs_local.c -o obj/jl_gs_local.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/crystal.c -o obj/jl_crystal.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/comm.c -o obj/jl_comm.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/tensor.c -o obj/jl_tensor.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/fail.c -o obj/jl_fail.o
+/scratch/rvinuesa/nek1093/trunk/nek/jl/fail.c: In function ‘jl_die’:
+/scratch/rvinuesa/nek1093/trunk/nek/jl/fail.c:18:1: warning: ‘noreturn’ function does return
+ }
+ ^
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/fcrystal.c -o obj/jl_fcrystal.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/findpts.c -o obj/jl_findpts.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/findpts_local.c -o obj/jl_findpts_local.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/obbox.c -o obj/jl_obbox.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/poly.c -o obj/jl_poly.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/lob_bnd.c -o obj/jl_lob_bnd.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/findpts_el_3.c -o obj/jl_findpts_el_3.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/findpts_el_2.c -o obj/jl_findpts_el_2.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/sparse_cholesky.c -o obj/jl_sparse_cholesky.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/xxt.c -o obj/jl_xxt.o
+mpicc -c -I./inc_src -O2 -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG  -DPREFIX=jl_ /scratch/rvinuesa/nek1093/trunk/nek/jl/fcrs.c -o obj/jl_fcrs.o
+mpif90 -c -I./inc_src -O2 -fdefault-real-8 -fdefault-double-8 -x f77-cpp-input -DPTRSIZE8 -DMPI -DLONGINT8 -DUNDERSCORE -DGLOBAL_LONG_LONG -I/scratch/rvinuesa/StatsToolbox/compile -I/scratch/rvinuesa/nek1093/trunk/nek -I/scratch/rvinuesa/nek1093/trunk/nek/cmt -I./ /scratch/rvinuesa/StatsToolbox/compile/duct.f    -o obj/duct.o 
+mpif90 -o nek5000 -I./inc_src obj/duct.o obj/drive.o obj/drive1.o obj/drive2.o obj/plan4.o obj/bdry.o obj/coef.o obj/conduct.o obj/connect1.o obj/connect2.o obj/dssum.o obj/edgec.o obj/eigsolv.o obj/gauss.o obj/genxyz.o obj/navier1.o obj/makeq.o obj/navier0.o obj/navier2.o obj/navier3.o obj/navier4.o obj/prepost.o obj/speclib.o obj/map2.o obj/turb.o obj/mvmesh.o obj/ic.o obj/ssolv.o obj/planx.o obj/math.o obj/mxm_wrapper.o obj/hmholtz.o obj/gfdm_par.o obj/gfdm_op.o obj/gfdm_solve.o obj/subs1.o obj/subs2.o obj/genbox.o obj/gmres.o obj/hsmg.o obj/convect.o obj/induct.o obj/perturb.o obj/navier5.o obj/navier6.o obj/navier7.o obj/navier8.o obj/fast3d.o obj/fasts.o obj/calcz.o obj/byte.o obj/chelpers.o obj/byte_mpi.o obj/postpro.o obj/cvode_driver.o obj/nek_comm.o obj/init_plugin.o obj/setprop.o obj/qthermal.o obj/cvode_aux.o obj/makeq_aux.o obj/papi.o obj/nek_in_situ.o obj/drive1_cmt.o obj/drive2_cmt.o obj/driver3_cmt.o obj/face.o obj/ausm.o obj/MixtPerf.o obj/intpdiff.o obj/diffusive_cmt.o obj/eqnsolver_cmt.o obj/surface_fluxes.o obj/bc.o obj/inflow_bc.o obj/outflow_bc.o obj/wall_bc.o obj/step.o obj/filters_cmt.o obj/diagnostics.o obj/mxm_std.o obj/blas.o obj/IO_tools.o obj/chkpoint.o obj/uparam.o obj/statistics.o obj/statistics_2DIO.o obj/statistics_2D_usr.o obj/statistics_2D_debug.o obj/time_series.o obj/time_seriesIO.o obj/pts_redistribute.o obj/rt_filter.o obj/comm_mpi.o obj/singlmesh.o obj/dsygv.o obj/ssygv.o obj/jl_gs.o obj/jl_sort.o obj/jl_sarray_transfer.o obj/jl_sarray_sort.o obj/jl_gs_local.o obj/jl_crystal.o obj/jl_comm.o obj/jl_tensor.o obj/jl_fail.o obj/jl_fcrystal.o obj/jl_findpts.o obj/jl_findpts_local.o obj/jl_obbox.o obj/jl_poly.o obj/jl_lob_bnd.o obj/jl_findpts_el_3.o obj/jl_findpts_el_2.o obj/jl_sparse_cholesky.o obj/jl_xxt.o obj/jl_fcrs.o 
+#############################################################
+#                  Compilation successful!                  #
+#############################################################
+   text	   data	    bss	    dec	    hex	filename
+2595243	   3600	212244744	214843587	cce40c3	nek5000
+
+

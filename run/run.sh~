@@ -1,0 +1,2 @@
+rm *.sch
+mpirun -np 1 nek5000 
